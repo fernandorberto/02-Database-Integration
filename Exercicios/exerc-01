@@ -1,0 +1,23 @@
+Exercício 1: Criar as seguintes tabelas. Definir chaves primárias e chaves estrangeiras.
+ 
+Clientes
+id_cliente: INT, PK
+nome: VARCHAR(50)
+email: VARCHAR(50)
+telefone: INT
+endereco: VARCHAR(80)
+cpf: INT
+ 
+Pedidos
+id_pedido: INT, PK
+id_cliente: INT, FK
+data_pedido: DATE
+status: VARCHAR(10)
+ 
+ItensPedido
+id_pedido: INT, PK
+id_item_pedido: INT, PK
+id_produto: INT, FK
+quantidade: INT
+preco_unitario: FLOAT
+

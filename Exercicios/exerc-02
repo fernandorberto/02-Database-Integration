@@ -1,0 +1,38 @@
+Exercício 2: Sistema de Notas e Disciplinas de Faculdade
+ 
+Aluno
+id_aluno: INT, PK
+nome: VARCHAR(50)
+ra: VARCHAR(10)
+email: VARCHAR(50)
+telefone: INT
+ 
+Professor
+id_professor: INT, PK
+nome: VARCHAR(50)
+titulacao: VARCHAR(50)
+email: VARCHAR(50)
+telefone: INT
+ 
+Grade Aluno
+id_grade: INT, PK
+id_aluno: INT, FK
+id_disciplina: INT, FK
+ano: INT
+semestre: INT
+p1: FLOAT
+p2: FLOAT
+ 
+Disciplina
+id_disciplina: INT, PK
+nome: VARCHAR(100)
+carga: INT
+ementa: TEXT
+id_professor: INT, FK
+id_curso: INT, FK
+ 
+Curso
+id_curso: INT, PK
+nome: VARCHAR(100)
+qtd_semestres: INT
+turno: VARCHAR(50)
